@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-10-06T06:43:07Z</date>
+    <date>2014-10-06T10:45:56Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -120,16 +120,16 @@
     <triggers>
         <trigger>
             <expression>{Template App gridengine master:gridengine.master.qmaster.last(0)}=0</expression>
-            <name>gridengine qmaster is not running</name>
+            <name>gridengine qmaster is not running on {HOSTNAME}</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description/>
-            <type>1</type>
+            <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template App gridengine master:gridengine.master.scheduler.last(0)}=1</expression>
+            <expression>{Template App gridengine master:gridengine.master.scheduler.last(0)}=0</expression>
             <name>gridengine scheduler is not running on {HOSTNAME}</name>
             <url/>
             <status>0</status>
