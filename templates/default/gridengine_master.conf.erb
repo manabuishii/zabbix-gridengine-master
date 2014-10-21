@@ -1,0 +1,3 @@
+UserParameter=gridengine.master.qmaster,ps aux | grep sge | grep -v grep | grep -c qmaster
+UserParameter=gridengine.master.scheduler,SGE_ROOT=<%= @sgeroot %> qconf -sss &> /dev/null ; RET=`expr 1 - $?` ; echo $RET
+
